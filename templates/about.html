@@ -1,7 +1,16 @@
 {% extends 'base.html'  %}
 
 {% block content %}
-    <h1> About Page </h1>
-    <p> About page template rendered </p>
+    <h1> {{ name }} Page </h1>
+    <p> {{ name }} page template rendered with number {{ number }} </p>
+
+    <ul>
+        {% for listItem in numberList %}
+        <li>
+            {{listItem}}
+        </li>
+        {% endfor %}
+    </ul>
+
 {% endblock  %}
 
