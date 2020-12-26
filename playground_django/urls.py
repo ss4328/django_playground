@@ -20,8 +20,8 @@ from pages.views import home_view, contact_view, social_view, about_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home_view, name='home'),
-    path('home/', home_view, name='home'),
+    path('', home_view),
+    path('home/', home_view),
     path('contact/', contact_view),
     path('about/', about_view),
     path('social/', social_view),
